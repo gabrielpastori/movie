@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="movie.css" type="text/css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="jquery.tablesort.js"></script>
+        <script src="movie.js"></script>
+
+    </head>
+    <body>
+        <h1>My Favorite Movies</h1>
+        <form>
+            <div>
+                <label>Title</label>
+                <input placeholder="Movie Title" type="text" id="title"/>
+            </div>
+            <div>
+                <label>Rating</label>
+                <input id="rating" placeholder="Rate the movie (0-10)" type="number" id="rating" min="0" max="10"/>
+            </div>
+            <div>
+                <button id="add">Add Movie</button>
+            </div>
+        </form>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th class="no-sort">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr>
+                    <td>Interestelar</td>
+                    <td>10</td>
+                    <td class="tdDelete"><button class="delete">delete</button></td>
+                </tr>
+                
+            </tbody>
+            
+          </table>
+    </body>
+</html>
